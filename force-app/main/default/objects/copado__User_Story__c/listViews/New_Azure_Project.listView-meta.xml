@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Azure_Project</fullName>
+    <columns>copadoccmint__External_Id__c</columns>
+    <columns>NAME</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>copado__Developer__c</columns>
+    <columns>copado__Order__c</columns>
+    <columns>copado__Priority__c</columns>
+    <columns>copado__Release__c</columns>
+    <columns>copado__Sprint__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>copado__User_Story_Title__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>copado__Project__c</field>
+        <operation>contains</operation>
+        <value>2nd</value>
+    </filters>
+    <label>New Azure Project</label>
+</ListView>

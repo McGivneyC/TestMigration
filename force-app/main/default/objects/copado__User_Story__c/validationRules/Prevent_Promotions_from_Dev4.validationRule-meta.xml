@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Promotions_from_Dev4</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+copado__Org_Credential__r.Name = &quot;Dev4&quot;,
+OR(
+copado__Promote_Change__c,
+copado__Promote_and_Deploy__c
+)
+)</errorConditionFormula>
+    <errorMessage>Prevent Promotions from Dev4</errorMessage>
+</ValidationRule>

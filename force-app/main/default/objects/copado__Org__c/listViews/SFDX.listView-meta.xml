@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFDX</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>copado__Platform__c</field>
+        <operation>equals</operation>
+        <value>SFDX</value>
+    </filters>
+    <label>SFDX</label>
+</ListView>

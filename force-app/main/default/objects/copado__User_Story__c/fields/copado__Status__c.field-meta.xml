@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copado__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Current status of the implementation of the User Story.</description>
+    <inlineHelpText>Current status of the implementation of the User Story.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Awaiting Approval</fullName>
+                <default>false</default>
+                <label>Awaiting Approval</label>
+            </value>
+            <value>
+                <fullName>Backburner</fullName>
+                <default>false</default>
+                <label>Backburner</label>
+            </value>
+            <value>
+                <fullName>Backlog</fullName>
+                <default>false</default>
+                <label>Backlog</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Committed</fullName>
+                <default>false</default>
+                <label>Committed</label>
+            </value>
+            <value>
+                <fullName>Developer Assigned</fullName>
+                <default>false</default>
+                <label>Developer Assigned</label>
+            </value>
+            <value>
+                <fullName>Development Complete</fullName>
+                <default>false</default>
+                <label>Development Complete</label>
+            </value>
+            <value>
+                <fullName>Development In Progress</fullName>
+                <default>false</default>
+                <label>Development In Progress</label>
+            </value>
+            <value>
+                <fullName>Doing</fullName>
+                <default>false</default>
+                <label>Doing</label>
+            </value>
+            <value>
+                <fullName>Done</fullName>
+                <default>false</default>
+                <label>Done</label>
+            </value>
+            <value>
+                <fullName>Draft</fullName>
+                <default>false</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Grooming</fullName>
+                <default>false</default>
+                <label>Grooming</label>
+            </value>
+            <value>
+                <fullName>Grooming Complete</fullName>
+                <default>false</default>
+                <label>Grooming Complete</label>
+            </value>
+            <value>
+                <fullName>IN Peer Review</fullName>
+                <default>false</default>
+                <label>IN Peer Review</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>No Merge Conflicts</fullName>
+                <default>false</default>
+                <label>No Merge Conflicts</label>
+            </value>
+            <value>
+                <fullName>PO Verification</fullName>
+                <default>false</default>
+                <label>PO Verification</label>
+            </value>
+            <value>
+                <fullName>Production Released</fullName>
+                <default>false</default>
+                <label>Production Released</label>
+            </value>
+            <value>
+                <fullName>QA Complete</fullName>
+                <default>false</default>
+                <label>QA Complete</label>
+            </value>
+            <value>
+                <fullName>QA In Progress</fullName>
+                <default>false</default>
+                <label>QA In Progress</label>
+            </value>
+            <value>
+                <fullName>Ready for Production</fullName>
+                <default>false</default>
+                <label>Ready for Production</label>
+            </value>
+            <value>
+                <fullName>Ready for QA</fullName>
+                <default>false</default>
+                <label>Ready for QA</label>
+            </value>
+            <value>
+                <fullName>Ready for UAT</fullName>
+                <default>false</default>
+                <label>Ready for UAT</label>
+            </value>
+            <value>
+                <fullName>Removed</fullName>
+                <default>false</default>
+                <label>Removed</label>
+            </value>
+            <value>
+                <fullName>Requirements Verified</fullName>
+                <default>true</default>
+                <label>Requirements Verified</label>
+            </value>
+            <value>
+                <fullName>To Do</fullName>
+                <default>false</default>
+                <label>To Do</label>
+            </value>
+            <value>
+                <fullName>UAT Complete</fullName>
+                <default>false</default>
+                <label>UAT Complete</label>
+            </value>
+            <value>
+                <fullName>UAT In Progress</fullName>
+                <default>false</default>
+                <label>UAT In Progress</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

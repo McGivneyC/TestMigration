@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bulut__Prevent_deployment_when_story_in_base</fullName>
+    <active>true</active>
+    <description>This validation rule prevents deployment of a user story past its base branch</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(copado__User_Story__r.bulut__Current_Branch__c)),
+    NOT(ISBLANK(copado__User_Story__r.copado__Base_Branch__c)),
+    LOWER(copado__User_Story__r.bulut__Current_Branch__c) =  LOWER(copado__User_Story__r.copado__Base_Branch__c)
+)</errorConditionFormula>
+    <errorMessage>You cannot deploy a user story past its base branch</errorMessage>
+</ValidationRule>

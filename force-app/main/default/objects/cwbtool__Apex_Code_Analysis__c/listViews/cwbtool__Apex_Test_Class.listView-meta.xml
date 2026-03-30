@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cwbtool__Apex_Test_Class</fullName>
+    <columns>NAME</columns>
+    <columns>cwbtool__Action_Type__c</columns>
+    <columns>cwbtool__Org_Name__c</columns>
+    <columns>cwbtool__Export_to_Excel__c</columns>
+    <columns>cwbtool__Step_2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>cwbtool__Action_Type__c</field>
+        <operation>equals</operation>
+        <value>ApexTestClass</value>
+    </filters>
+    <label>Apex Test Class</label>
+</ListView>

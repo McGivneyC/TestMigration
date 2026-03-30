@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Required_Approvals_Received__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Total Number of Required Approvals Received; the PR Submitter&apos;s Reviews are not counted amongst PR Metrics.</inlineHelpText>
+    <label>Total Required Approvals Received</label>
+    <summaryFilterItems>
+        <field>copado__Pull_Request_Review__c.copado__Review_Action__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>copado__Pull_Request_Review__c.Required_Reviewer__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>copado__Pull_Request_Review__c.PR_Submitter__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>copado__Pull_Request_Review__c.copado__Pull_Request__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

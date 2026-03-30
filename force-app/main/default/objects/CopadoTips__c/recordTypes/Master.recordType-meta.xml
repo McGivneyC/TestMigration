@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Master</fullName>
+    <active>true</active>
+    <label>Master</label>
+    <picklistValues>
+        <picklist>TipCategory__c</picklist>
+        <values>
+            <fullName>Best Practice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copado Methodology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DevOps Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How-to%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Release Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

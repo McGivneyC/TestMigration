@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Manual_task_review</fullName>
+    <active>true</active>
+    <description>Require manual task review</description>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(Manual_Tasks_Present__c)),
+  NOT(ISBLANK(copado__Metadata_Types_in_Selection__c)),
+  OR(
+    AND(
+      PRIORVALUE(copado__Promote_Change__c) = false,
+      copado__Promote_Change__c = true
+    ),
+AND(
+PRIORVALUE(copado__Promote_and_Deploy__c) = false,
+copado__Promote_and_Deploy__c = true
+)
+),
+	Manual_Tasks_Reviewed__c=false
+)</errorConditionFormula>
+    <errorMessage>Please Review your Manual Tasks and make sure none of them could be automated or committed using Copado. Flag &apos;Manual Task Reviewed&apos; as true if this has been completed.</errorMessage>
+</ValidationRule>

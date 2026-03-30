@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pull_Request_Approved</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(copado__Metadata_Types_in_Selection__c)),OR(AND(PRIORVALUE(copado__Promote_Change__c) = false,copado__Promote_Change__c = true),AND(PRIORVALUE(copado__Promote_and_Deploy__c) = false,copado__Promote_and_Deploy__c = true)),copado__Pull_Requests_Approved__c = false,copado__Project__r.copado__Deployment_Flow__c = &apos;a0W5e000005ek8iEAA&apos;)</errorConditionFormula>
+    <errorDisplayField>copado__Promote_and_Deploy__c</errorDisplayField>
+    <errorMessage>Can not Promote and Deploy until Pull Request is approved</errorMessage>
+</ValidationRule>

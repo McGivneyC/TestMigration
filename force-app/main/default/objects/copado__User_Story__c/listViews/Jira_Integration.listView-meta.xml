@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jira_Integration</fullName>
+    <columns>NAME</columns>
+    <columns>Sequence__c</columns>
+    <columns>copado__User_Story_Title__c</columns>
+    <columns>copado__Status__c</columns>
+    <columns>copado__Environment__c</columns>
+    <columns>copado__Project__c</columns>
+    <columns>copado__Release__c</columns>
+    <columns>copado__Sprint__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>copado__Is_Bundle__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>copado__Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled</value>
+    </filters>
+    <filters>
+        <field>copado__Environment__c</field>
+        <operation>notEqual</operation>
+        <value>Production</value>
+    </filters>
+    <filters>
+        <field>copado__Project__c</field>
+        <operation>equals</operation>
+        <value>Jira Integration</value>
+    </filters>
+    <filters>
+        <field>copado__Environment__c</field>
+        <operation>equals</operation>
+        <value>Dev1</value>
+    </filters>
+    <label>Jira Integration</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cwbtool__View_Detail</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>View Detail</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/apex/cwbtool__redirect?Id={!cwbtool__Apex_Code_Analysis__c.Id}&amp;to={!cwbtool__Apex_Code_Analysis__c.cwbtool__Action_Type__c}</url>
+</WebLink>

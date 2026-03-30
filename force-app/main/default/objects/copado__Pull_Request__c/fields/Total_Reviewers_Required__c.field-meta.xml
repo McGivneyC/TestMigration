@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Reviewers_Required__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Length of string in Requested Reviewers with &apos;(Required)&apos;, less length of string without &apos;(Required)&apos;, divided by 10</description>
+    <externalId>false</externalId>
+    <formula>IF( CONTAINS( copado__Requested_Reviewers__c, copado__Username__c&amp;&apos; (Required)&apos;), 
+((LEN( copado__Requested_Reviewers__c )- LEN( SUBSTITUTE( copado__Requested_Reviewers__c, &apos;(Required)&apos;, &apos;&apos;) )) / 10) - 1, 
+(LEN( copado__Requested_Reviewers__c )- LEN( SUBSTITUTE( copado__Requested_Reviewers__c, &apos;(Required)&apos;, &apos;&apos;) )) / 10)</formula>
+    <inlineHelpText>Count of Required Reviewers requested; the PR Submitter&apos;s Reviews are not counted amongst PR Metrics.</inlineHelpText>
+    <label>Total Reviewers Required</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

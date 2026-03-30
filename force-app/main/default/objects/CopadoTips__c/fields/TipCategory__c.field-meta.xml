@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipCategory__c</fullName>
+    <deprecated>false</deprecated>
+    <description>What category does your tip fall under?</description>
+    <inlineHelpText>What category does your tip fall under?</inlineHelpText>
+    <label>Tip Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Best Practice</fullName>
+                <default>false</default>
+                <label>Best Practice</label>
+            </value>
+            <value>
+                <fullName>How-to&apos;s</fullName>
+                <default>false</default>
+                <label>How-to&apos;s</label>
+            </value>
+            <value>
+                <fullName>DevOps Process</fullName>
+                <default>false</default>
+                <label>DevOps Process</label>
+            </value>
+            <value>
+                <fullName>Copado Methodology</fullName>
+                <default>false</default>
+                <label>Copado Methodology</label>
+            </value>
+            <value>
+                <fullName>Release Manager</fullName>
+                <default>false</default>
+                <label>Release Manager</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

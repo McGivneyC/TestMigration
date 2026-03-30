@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cwbtool__Export_to_Excel__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(cwbtool__Action_Type__c ,&apos;ApexTestClass&apos;),HYPERLINK(&quot;/apex/cwbtool__VF_ApexClassCodeCoverageDownload?Id=&quot;+ Id+&quot;&amp;from=recDetail&quot;, &quot;Export To Excel&quot;, &quot;_blank&quot;),  
+IF(ISPICKVAL(cwbtool__Action_Type__c ,&apos;RecordTypePicklist&apos;),HYPERLINK(&quot;/apex/cwbtool__RecordTypePicklistVisibilityDownload?Id=&quot;+ Id+&quot;&amp;from=recDetail&amp;reportId=&quot;+cwbtool__Request_Analysis_File_Name__c, &quot;Export To Excel&quot;, &quot;_blank&quot;),
+HYPERLINK(&quot;/apex/cwbtool__downloadApexCodeAnalysis?Id=&quot;+ Id+&quot;&amp;from=recDetail&quot;, &quot;Export To Excel&quot;, &quot;_blank&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Export to Excel</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
