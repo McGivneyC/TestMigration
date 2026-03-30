@@ -1,0 +1,24 @@
+<template>
+    <template if:true={defaultTip}>
+        <div class="copado-tip-container">
+            <!-- Use a span or div for clickable text styled as a link -->
+            <span class="link-like" onclick={navigateToRecord} data-id={defaultTip.Id}>
+                {defaultTip.TipCategory__c} - {defaultTip.Name}
+            </span>
+            <lightning-formatted-rich-text class="copado-description-text" value={defaultTip.TipDescription__c}></lightning-formatted-rich-text>
+        </div>
+    </template>
+    <template if:true={randomTip}>
+        <div class="copado-tip-container">
+            <span class="link-like" onclick={navigateToRecord} data-id={randomTip.Id}>
+                {randomTip.TipCategory__c} - {randomTip.Name}
+            </span>
+            <lightning-formatted-rich-text class="copado-description-text" value={randomTip.TipDescription__c}></lightning-formatted-rich-text>
+        </div>
+    </template>
+    <template if:true={showNoTipMessage}>
+        <div class="copado-tip-container">
+            No tip available.
+        </div>
+    </template>
+</template>

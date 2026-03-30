@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>CQP Developer</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>CQP Developer</label>
+    <navType>Standard</navType>
+    <tabs>copado__User_Story__c</tabs>
+    <tabs>copado__Promotion__c</tabs>
+    <tabs>copado__Deployment__c</tabs>
+    <tabs>copado__Team_Dependency__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>CQP_Developer_UtilityBar</utilityBar>
+</CustomApplication>

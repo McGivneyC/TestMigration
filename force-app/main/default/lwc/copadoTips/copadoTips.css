@@ -1,0 +1,35 @@
+/* copadoTipBanner.css */
+
+/* Container styles */
+.copado-tip-container {
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Decription Text styles */
+.copado-description-text {
+    font-size: 12px;
+    font-weight: normal;
+    color: #333; /* Text color */
+    text-align: center;
+}
+
+/* Copado Tip Text styles */
+.copado-tip-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2371f0; /* Text color */
+    text-align: center;
+}
+
+.link-like {
+    cursor: pointer;
+    color: #0070d2; /* Salesforce blue link color */
+    text-decoration: underline;
+    display: block;
+}
+/* Optional: Add additional styles as needed */
