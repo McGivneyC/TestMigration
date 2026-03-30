@@ -1,6 +1,0 @@
-<apex:page standardController="copado__Project__c" extensions="DeleteCalloutLogsController" action="{!executeBatch}">
-    <apex:pageMessages />
-    <apex:form >
-        <apex:commandButton value="Back to Project" action="{!cancel}" />
-    </apex:form>
-</apex:page>

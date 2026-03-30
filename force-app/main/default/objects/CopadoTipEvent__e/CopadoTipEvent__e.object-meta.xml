@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <deploymentStatus>InDevelopment</deploymentStatus>
-    <description>Capture and display the  default Copado Tip based on the Start and End Time fields</description>
-    <eventType>HighVolume</eventType>
-    <label>CopadoTipEvent</label>
-    <pluralLabel>CopadoTipEvents</pluralLabel>
-    <publishBehavior>PublishAfterCommit</publishBehavior>
-</CustomObject>
